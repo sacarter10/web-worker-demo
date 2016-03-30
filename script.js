@@ -1,7 +1,7 @@
 var spawnThread = function () {
 	var n = parseInt(document.getElementById("input-number").value);
 
-	var primeWorker = new Worker('/primeScript.js');
+	var primeWorker = new Worker('./primeScript.js');
 	var result = document.getElementById("nth-prime-result");
 
 	primeWorker.postMessage(n);
